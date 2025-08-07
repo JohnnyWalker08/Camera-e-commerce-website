@@ -1,0 +1,251 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elite Camera Store</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #0f1115;
+      color: white;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.8);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      backdrop-filter: blur(8px);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav ul li {
+      position: relative;
+    }
+
+    nav ul li:hover .mega-menu {
+      display: flex;
+    }
+
+    .mega-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #1a1c22;
+      padding: 1rem;
+      gap: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      transition: 0.3s ease;
+      z-index: 999;
+    }
+
+    .mega-menu div {
+      min-width: 150px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .hero button {
+      padding: 1rem 2rem;
+      background: #ff007f;
+      color: white;
+      border: none;
+      font-size: 1rem;
+      border-radius: 30px;
+      cursor: pointer;
+    }
+
+    .section {
+      padding: 3rem 2rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 20px;
+      padding: 1.5rem;
+      backdrop-filter: blur(10px);
+    }
+
+    .seo {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      align-items: center;
+      justify-content: center;
+      background: #111319;
+      border-radius: 20px;
+      padding: 2rem;
+    }
+
+    .seo-text {
+      flex: 1;
+      max-width: 600px;
+    }
+
+    .seo-img {
+      flex: 1;
+      min-width: 300px;
+      height: 200px;
+      background: #2a2e38;
+      border-radius: 15px;
+    }
+
+    footer {
+      background: #1a1c22;
+      padding: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+
+    .newsletter input {
+      padding: 0.5rem;
+      border-radius: 5px;
+      border: none;
+      margin-right: 0.5rem;
+    }
+
+    .newsletter button {
+      padding: 0.5rem 1rem;
+      border: none;
+      background: #ff007f;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h2>EliteCam</h2>
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>Shop</li>
+        <li>Categories
+          <div class="mega-menu">
+            <div>
+              <h4>DSLR</h4>
+              <p>Pro Photography</p>
+            </div>
+            <div>
+              <h4>Mirrorless</h4>
+              <p>Lightweight & Pro</p>
+            </div>
+            <div>
+              <h4>Accessories</h4>
+              <p>All You Need</p>
+            </div>
+          </div>
+        </li>
+        <li>About</li>
+        <li>FAQ</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Capture Life in Ultra Clarity</h1>
+    <p>The ultimate destination for professional and hobbyist photographers</p>
+    <button>Shop Now</button>
+  </section>
+
+  <section class="section">
+    <h2>Product Categories</h2>
+    <div class="grid">
+      <div class="card">📷 DSLR Cameras</div>
+      <div class="card">📸 Mirrorless Cameras</div>
+      <div class="card">🎒 Camera Accessories</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Featured Products</h2>
+    <div class="grid">
+      <div class="card">Canon EOS R5</div>
+      <div class="card">Sony A7 IV</div>
+      <div class="card">Nikon Z6 II</div>
+      <div class="card">GoPro Hero 11</div>
+    </div>
+  </section>
+
+  <section class="section seo">
+    <div class="seo-text">
+      <h2>Why Choose EliteCam?</h2>
+      <p>EliteCam brings together the best in photography gear, expert advice, and unbeatable deals. Whether you're a seasoned professional or a beginner looking to upgrade, our curated selection, fast delivery, and reliable support will help you capture every moment like a pro. With top brands, competitive pricing, and exclusive bundles, we make sure you get the value you deserve. Join our photography community today and elevate your craft.</p>
+    </div>
+    <div class="seo-img"></div>
+  </section>
+
+  <section class="section">
+    <div class="card" style="text-align: center; background: #ff007f; color: white;">
+      <h2>📢 Limited Time Offer: 20% Off All Mirrorless Cameras!</h2>
+    </div>
+  </section>
+
+  <footer>
+    <div>
+      <h4>Quick Links</h4>
+      <ul>
+        <li>Home</li>
+        <li>Shop</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Follow Us</h4>
+      <p>📷 Instagram<br>🐦 Twitter<br>📘 Facebook</p>
+    </div>
+    <div class="newsletter">
+      <h4>Subscribe</h4>
+      <input type="email" placeholder="Your email">
+      <button>Join</button>
+    </div>
+  </footer>
+
+</body>
+</html>
